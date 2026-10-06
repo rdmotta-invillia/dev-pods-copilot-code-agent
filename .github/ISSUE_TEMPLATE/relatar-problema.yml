@@ -1,0 +1,40 @@
+name: Relatar um problema
+description: Conte o que não está funcionando como deveria.
+title: "[Problema] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: O que aconteceu?
+      description: Explique o problema com suas palavras e diga em que página ou atividade ele aparece.
+      placeholder: "Por exemplo: ao tentar se inscrever em uma atividade, aparece uma mensagem de erro."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como podemos encontrar o problema?
+      description: Conte o que você fez antes de o problema aparecer. Se puder, inclua a página e os passos.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que deveria acontecer?
+      description: Descreva como seria o resultado correto e como saberemos que o problema foi resolvido.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Você tem alguma ideia para resolver?
+      description: Compartilhe sugestões ou escreva "não tenho uma sugestão".
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Há algum limite ou informação importante?
+      description: Inclua quem é afetado, quando isso acontece e qualquer coisa que devemos manter ou evitar. Se não houver, escreva "sem outros detalhes".
+    validations:
+      required: true

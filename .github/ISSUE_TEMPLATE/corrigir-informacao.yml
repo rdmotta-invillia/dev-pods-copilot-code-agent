@@ -1,0 +1,46 @@
+name: Corrigir ou atualizar uma informação
+description: Avise sobre uma informação incorreta ou desatualizada no site.
+title: "[Informação] "
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Onde está a informação?
+      description: Informe a página, atividade ou seção onde ela aparece.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: O que está escrito atualmente?
+      description: Copie a informação atual ou explique o que está incorreto.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Qual é a informação correta?
+      description: Escreva exatamente o que deve aparecer. Inclua datas, horários ou nomes completos, se necessário.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Como saberemos que a correção está pronta?
+      description: Explique o que devemos conferir no site depois da atualização.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Há alguma sugestão sobre como apresentar essa informação?
+      description: Inclua exemplos ou escreva "sem sugestão".
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Há algum limite ou informação importante?
+      description: Diga para quem a informação é importante, quando deve valer e o que devemos manter ou evitar. Se não houver, escreva "sem outros detalhes".
+    validations:
+      required: true
