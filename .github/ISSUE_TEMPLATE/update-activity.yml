@@ -1,0 +1,40 @@
+name: Alterar uma atividade
+description: Peça para corrigir ou atualizar as informações de uma atividade existente.
+title: "Alteração de atividade: "
+body:
+  - type: textarea
+    id: activity
+    attributes:
+      label: Qual atividade precisa de alteração?
+      description: Informe o nome da atividade e o que está escrito atualmente, se souber.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: O que deve mudar?
+      description: Diga qual informação deve ser corrigida e qual deve ser o novo valor.
+      placeholder: "Exemplo: o treino agora acontece às terças, em vez de às segundas."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Como saberemos que está pronta?
+      description: Descreva o resultado correto e como confirmar a alteração.
+    validations:
+      required: true
+  - type: textarea
+    id: ideas
+    attributes:
+      label: Sugestões para começar
+      description: Tem um exemplo de como a informação deve ficar? Se não, escreva "Não sei".
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Informações e limites importantes
+      description: Informe quando a alteração deve valer e se há algo que precisa ser mantido ou evitado.
+    validations:
+      required: true

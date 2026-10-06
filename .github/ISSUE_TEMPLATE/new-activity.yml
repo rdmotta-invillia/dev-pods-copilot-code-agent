@@ -1,0 +1,47 @@
+name: Cadastrar uma atividade
+description: Peça para adicionar um clube, equipe ou outra atividade escolar.
+title: "Nova atividade: "
+body:
+  - type: textarea
+    id: activity
+    attributes:
+      label: Detalhes da atividade
+      description: Informe o nome, uma descrição para os alunos, os dias e horários, e o número máximo de participantes.
+      placeholder: |
+        Nome:
+        Descrição:
+        Dias e horários:
+        Máximo de participantes:
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: O que os alunos devem encontrar?
+      description: Explique como a atividade deve aparecer e quais informações são mais importantes.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Como saberemos que está pronta?
+      description: Liste o que deve funcionar ou aparecer para considerar o pedido concluído.
+      placeholder: |
+        - A atividade aparece na lista com o nome e a descrição corretos.
+        - Os dias, horários e limite de participantes estão corretos.
+    validations:
+      required: true
+  - type: textarea
+    id: ideas
+    attributes:
+      label: Sugestões para começar
+      description: Há outra atividade no site que possa servir de exemplo? Inclua outras ideias ou escreva "Não sei".
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Informações e limites importantes
+      description: Inclua a data de início, detalhes especiais ou algo que não deve ser alterado.
+    validations:
+      required: true

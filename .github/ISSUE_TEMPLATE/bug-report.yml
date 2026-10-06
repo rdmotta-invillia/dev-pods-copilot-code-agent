@@ -1,0 +1,41 @@
+name: Relatar um problema
+description: Conte o que não está funcionando no site.
+title: "Problema: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: O que aconteceu?
+      description: Diga em qual página ou atividade percebeu o problema e o que você estava tentando fazer.
+      placeholder: "Exemplo: ao filtrar atividades por sábado, nenhuma atividade aparece."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Como podemos ver o problema?
+      description: Conte os passos que seguiu. Se não souber ou não conseguir repetir, explique isso.
+      placeholder: "1. Abri a página de atividades\n2. Escolhi o filtro..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que deveria acontecer?
+      description: Descreva o resultado correto e como saberemos que o problema foi resolvido.
+    validations:
+      required: true
+  - type: textarea
+    id: ideas
+    attributes:
+      label: Ideias para começar
+      description: Tem alguma sugestão ou solução em mente? Se não, escreva "Não sei".
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Informações e limites importantes
+      description: Quando percebeu o problema? Há algo que precisa ser mantido ou evitado? Não inclua dados pessoais de alunos.
+    validations:
+      required: true
