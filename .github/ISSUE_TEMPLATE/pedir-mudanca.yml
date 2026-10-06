@@ -1,0 +1,39 @@
+name: Pedir uma mudança
+description: Sugira uma melhoria ou algo novo para o site.
+title: "[Mudança] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: O que você gostaria que mudasse?
+      description: Explique o que precisa ser diferente e em qual página ou atividade.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Quem precisa disso e por quê?
+      description: Conte como essa mudança ajudaria alunos, professores ou outras pessoas.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Como saberemos que a mudança está pronta?
+      description: Dê exemplos do que a pessoa deve conseguir ver ou fazer quando estiver funcionando.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Você tem alguma ideia de como poderia funcionar?
+      description: Compartilhe exemplos ou sugestões. Se não tiver, escreva "não tenho uma sugestão".
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Há algum limite ou informação importante?
+      description: Diga o que devemos manter ou evitar e inclua datas ou situações especiais. Se não houver, escreva "sem outros detalhes".
+    validations:
+      required: true
